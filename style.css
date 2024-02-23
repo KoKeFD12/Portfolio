@@ -1,24 +1,45 @@
+@font-face {
+    font-family: lucida_console;
+    src: url("./resources/fonts/LUCON.TTF");
+}
+
 body {
     background-color: rgba(37, 36, 34, 1);
     color: white;
     margin: 0;
     padding: 0;
+    font-family: lucida_console;
 }
 
 #navbar {
-    
     list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: rgba(56, 55, 51, 1);
     backdrop-filter: blur(2px);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
 }
 
 #navbar > li {
     float: right;
     display: block;
     padding: 15px;
+}
+
+#presentation {
+    display: flex;
+}
+
+#presentation > div {
+    flex: 1, 1, auto;
+}
+
+.responsive_image {
+    width: 100%;
+    height: auto;
 }
 
 /* CSS HEX
